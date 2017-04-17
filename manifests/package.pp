@@ -2,11 +2,11 @@
 
 class couchdb::package (
     $provider = undef
-    $source    = undef
+    $source   = undef
 ){
   package { 'couchdb':
     ensure  => installed,
-    source => $source,
-    provider => $provider,
+    source => $couchdb::package::source,
+    provider => $couchdb::package::provider,
   }
 }
