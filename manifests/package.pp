@@ -1,8 +1,8 @@
 # Class: couchdb::package
 
 class couchdb::package (
-    $provider = undef
-    $source   = undef
+    $provider = undef,
+    $source   = undef,
 ){
   package { 'couchdb':
     ensure  => installed,
